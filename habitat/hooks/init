@@ -1,5 +1,4 @@
 #!/bin/sh
 
-# Copy the files we'll need at runtime to the place where-at they'll be runned from.
 cp -R {{pkg.path}}/* {{pkg.svc_var_path}}
 ln -sfv ../config/config.js {{pkg.svc_var_path}}/config.js
