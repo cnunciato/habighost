@@ -1,7 +1,9 @@
-#!/bin/sh
+#!/bin/bash
 
-cd {{pkg.svc_var_path}}
+exec 2>&1
+cd "{{pkg.svc_static_path}}"
 
-GHOST_NODE_VERSION_CHECK=false \
-NODE_ENV=production \
-exec node index.js 2>&1
+export GHOST_NODE_VERSION_CHECK=false
+export NODE_ENV=production
+
+exec node index.js

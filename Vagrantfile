@@ -12,17 +12,7 @@ hab start $(ls -Art /vagrant/results/*.hart | tail -n 1)
 SCRIPT
 
 Vagrant.configure 2 do |config|
-
-  config.vm.define 'web' do |web|
-    web.vm.box = 'bento/ubuntu-16.04'
-
-    web.vm.network 'private_network', ip: '192.168.10.200'
-
-    web.vm.provision :shell, inline: $hab_setup
-
-    web.vm.provider 'virtualbox' do |provider|
-      provider.memory = 2048
-      provider.cpus = 2
-    end
-  end
+  config.vm.box = 'bento/ubuntu-16.04'
+  config.vm.network 'private_network', ip: '192.168.10.100'
+  config.vm.provision :shell, inline: $hab_setup
 end

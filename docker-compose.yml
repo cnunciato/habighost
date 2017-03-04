@@ -1,0 +1,10 @@
+version: '2'
+services:
+  ghost:
+    image: cnunciato/ghost
+    environment:
+      - HAB_GHOST=${HAB_GHOST}
+    ports:
+      - 2368:2368
+    volumes:
+      - ./data:/hab/svc/ghost/data

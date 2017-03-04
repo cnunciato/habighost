@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 
-cp -R {{pkg.path}}/* {{pkg.svc_var_path}}
-ln -sfv ../config/config.js {{pkg.svc_var_path}}/config.js
+cp -R "{{pkg.path}}"/* "{{pkg.svc_static_path}}"
+ln -sfv "{{pkg.svc_config_path}}/config.js" "{{pkg.svc_static_path}}/config.js"

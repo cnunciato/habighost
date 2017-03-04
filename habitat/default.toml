@@ -1,3 +1,15 @@
+url = "http://localhost:2368"
+
+[mail]
+#transport = "SMTP"
+
+  #[mail.options]
+  #service = "Mailgun"
+
+    #[mail.options.auth]
+    #user = "username@hostname.mailgun.org"
+    #pass = "password"
+
+[server]
 ip = "0.0.0.0"
 port = "2368"
-url = "http://192.168.10.200:2368"
