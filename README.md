@@ -60,10 +60,6 @@ The package currently supports only SQLite as a database, but the following [Gho
   * server.ip (string &mdash; default: `"0.0.0.0"`)
   * server.port (string &mdash; default: `"2368"`)
 
-## Contributions
-
-... are welcome! Fork, push and PR as you like.
-
 ## What is Ghost?
 
 It's this!
