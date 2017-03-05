@@ -45,8 +45,6 @@ open http://localhost:2368
 
 ... or with Docker Compose:
 
-or Docker Compose, if you want to leave the service running, restart, etc.:
-
 ```
 hab studio run "build && hab pkg export docker $HAB_ORIGIN/ghost"
 docker-compose up
