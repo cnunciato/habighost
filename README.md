@@ -1,4 +1,4 @@
-# habighost
+# habitat-ghost
 
 A [Habitat](https://www.habitat.sh/) plan for packaging a simple, SQLite-based Ghost installation.
 
