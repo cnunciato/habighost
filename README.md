@@ -53,12 +53,21 @@ open http://localhost:2368
 
 ## Configuration
 
-The package currently supports only SQLite as a database, but the following [Ghost configuration settings](http://support.ghost.org/config/) can be changed in the usual [Habitat-supported ways](https://www.habitat.sh/docs/run-packages-apply-config-updates/):
+The package supports the following Ghost configuration properties:
 
   * url (string &mdash; default: `"http://localhost:2368"`)
   * mail (object &mdash; default: `{}`)
+  * database (object &mdash; default is `{ "filename": "ghost.db" }`)
   * server.ip (string &mdash; default: `"0.0.0.0"`)
   * server.port (string &mdash; default: `"2368"`)
+
+See the [Ghost configuration](http://support.ghost.org/config/) and [Habitat configuration](https://www.habitat.sh/docs/run-packages-apply-config-updates/) docs for details.
+
+You can also specify a `user.toml`, which I find convenient (for example, to apply database or mail-server settings). See `docker-compose.yml` for an example of how to do this.
+
+## Themes
+
+The package is configured to look for its content (apps, images, data and themes) in the `$pkg_svc_data_path` directory, so if you've got some themes you'd like to be able to use, just make sure they end up at `/hab/svc/ghost/data/themes`, and they should appear in your General tab. See `docker-compose.yml` for an example.
 
 ## What is Ghost?
 

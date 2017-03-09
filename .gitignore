@@ -1,4 +1,5 @@
 .vagrant/
-results/
 data/
-custom.toml
+results/
+themes/
+user.toml

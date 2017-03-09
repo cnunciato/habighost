@@ -5,6 +5,7 @@ services:
     environment:
       - HAB_GHOST=${HAB_GHOST}
     ports:
-      - 2368:2368
+      - 1337:1337
     volumes:
-      - ./data:/hab/svc/ghost/data
+      - ./themes:/hab/svc/ghost/data/themes
+      - ./user.toml:/hab/svc/ghost/user.toml

@@ -1,4 +1,16 @@
 #!/bin/bash
 
+# Make directories for the data we want persisted between installs
+mkdir -p "{{pkg.svc_data_path}}/apps"
+mkdir -p "{{pkg.svc_data_path}}/data"
+mkdir -p "{{pkg.svc_data_path}}/images"
+mkdir -p "{{pkg.svc_data_path}}/themes"
+
+# Copy the app into the service's static path
 cp -R "{{pkg.path}}"/* "{{pkg.svc_static_path}}"
+
+# Link the bundled Casper theme
+ln -sfv "{{pkg.svc_static_path}}/content/themes/casper" "{{pkg.svc_data_path}}/themes/casper"
+
+# Link to the Habitat-managed config
 ln -sfv "{{pkg.svc_config_path}}/config.js" "{{pkg.svc_static_path}}/config.js"
