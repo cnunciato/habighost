@@ -1,6 +1,6 @@
 # habitat-ghost
 
-A [Habitat](https://www.habitat.sh/) plan for packaging a simple, SQLite-based Ghost installation.
+A [Habitat](https://www.habitat.sh/) plan for packaging [Ghost](https://ghost.org/), the excellent blog publishing platform.
 
 https://app.habitat.sh/#/pkgs/cnunciato/ghost
 
