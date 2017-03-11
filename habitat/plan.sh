@@ -18,7 +18,7 @@ pkg_build_deps=(
   core/python2
 )
 pkg_exports=(
-  [server-ip]=server.ip
+  [server-host]=server.host
   [server-port]=server.port
 )
 pkg_exposes=(

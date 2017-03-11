@@ -3,28 +3,28 @@
 
 url = "http://localhost:2368"
 
+[server]
+host = "0.0.0.0"
+port = "2368"
+
 [mail]
 #transport = "SMTP"
 
-  #[mail.options]
-  #service = "Mailgun"
+#[mail.options]
+#service = "Mailgun"
 
-    #[mail.options.auth]
-    #user = "username@hostname.mailgun.org"
-    #pass = "password"
+#[mail.options.auth]
+#user = "username@hostname.mailgun.org"
+#pass = "password"
 
 [database]
 client = "sqlite3"
 debug = "false"
 
-  [database.connection]
-  filename = "ghost.db"
-  # host = "127.0.0.1"
-  # user = "db_username"
-  # password = "db_password"
-  # database = "ghost"
-  # charset = "utf8"
-
-[server]
-ip = "0.0.0.0"
-port = "2368"
+[database.connection]
+filename = "ghost.db"
+# host = "127.0.0.1"
+# user = "db_username"
+# password = "db_password"
+# database = "ghost"
+# charset = "utf8"

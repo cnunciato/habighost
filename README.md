@@ -58,7 +58,7 @@ The package supports the following Ghost configuration properties:
   * url (string &mdash; default: `"http://localhost:2368"`)
   * mail (object &mdash; default: `{}`)
   * database (object &mdash; default is `{ "filename": "ghost.db" }`)
-  * server.ip (string &mdash; default: `"0.0.0.0"`)
+  * server.host (string &mdash; default: `"0.0.0.0"`)
   * server.port (string &mdash; default: `"2368"`)
 
 See the [Ghost configuration](http://support.ghost.org/config/) and [Habitat configuration](https://www.habitat.sh/docs/run-packages-apply-config-updates/) docs for details.
